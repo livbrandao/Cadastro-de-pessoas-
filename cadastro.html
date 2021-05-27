@@ -1,0 +1,100 @@
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title > CADASTRO </title>
+		<link rel="stylesheet" href="desafio.css">
+		
+		
+
+		<script>
+		      alert("BEM VINDO!")
+		      function cadastro(){
+			       var nome =(document.getElementById("nome").value);
+				   var idade =(document.getElementById("idade").value);
+				   var email =(document.getElementById("email").value);
+				   var senha = (document.getElementById("senha").value);
+				   var senha2 = (document.getElementById("senha2").value);
+				   
+				   if ( senha != senha2 ) {
+				    alert ("SENHAS NÃO CONFEREM\n TENTE NOVAMENTE!");
+					}else{
+				   alert ("Usuario: " +nome  + "\n" + "Idade: "+ idade+ "\n" + "E-mail: " + email + "\n" + "Senha: " + senha + "\n" +"Cadastro com sucesso!");
+				 }
+			  
+			  }
+		</script>
+     </head>
+   
+   <body class="fundo">
+	<div>
+        <h1 <i class="fa fa-align-left" aria-hidden="true"></i> > CADASTRO</h1>
+        <br>
+    </div>
+				 
+			</br>
+		</br>
+		<form>
+			<fieldset class="grupo">
+				<div class="campo">
+					<label for="nome"><strong>Nome</strong></label>
+					<input type="text" name="nome" id="nome" placeholder="Entre com seu nome aqui" required>
+				</div>
+	
+				<div class="campo">
+					<label for="sobrenome"><strong>Sobrenome</strong></label>
+					<input type="text" name="sobrenome" id="sobrenome" placeholder="Entre com seu sobrenome aqui" required>
+				</div>
+
+	
+			</fieldset>
+
+			<fieldset class="grupo">
+				
+				<div class="campo">
+					<label for="phone"><strong>Idade</strong></label>
+					<input type="number" name="idade" id="idade" placeholder="Qual sua idade?" required>
+				</div>
+
+				<div class="campo">
+					<label for="phone"><strong>Data de nascimento</strong></label>
+					<input type="date" name="data" id="data" placeholder="00/00/0000" required>
+				</div>
+			</fieldset>
+	
+			<fieldset class="grupo">
+				<div class="campo">
+					<label for="email"><strong>E-mail</strong></label>
+					<input type="email" name="email" id="email" placeholder="nome@exemplo.com" required>
+				</div>
+		
+				<div class="campo">
+					<label for="phone"><strong>Telefone</strong></label>
+					<input type="tel" name="phone" id="phone" placeholder="Entre com seu telefone aqui" required>
+				</div>
+			</fieldset>
+
+			<fieldset class="grupo">
+				<div class="campo">
+					<label for="senha"><strong>Digite uma senha:</strong></label>
+					<input type="password" name="senha" id="senha" placeholder="8 caracters" required>
+				</div>
+		
+				<div class="campo">
+					<label for="senha"><strong>Repita a senha:</strong></label>
+					<input type="password" name="senha2" id="senha2" placeholder="8 caracters" required>
+				</div>
+			</fieldset>
+				     
+		</div>
+
+  
+        <button value="CADASTRAR" onclick="cadastro()"
+		 class="botao" type="submit">Concluído</button>
+
+    </form>
+				 
+				 
+	
+	
+   </body>
+ </html>
